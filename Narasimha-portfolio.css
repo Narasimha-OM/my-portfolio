@@ -31,7 +31,7 @@ header {
   left: 0;
   background: rgba(10, 25, 47, 0.85);
   backdrop-filter: blur(10px);
-  padding: 10px 20px;
+  padding: 0px 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -627,6 +627,7 @@ nav a {
   margin-left: 25px;
   text-decoration: none;
   transition: 0.3s;
+   padding: 0px 15px;
 }
 
 nav a:hover { color: #64ffda; }
@@ -814,3 +815,4 @@ nav a:hover { color: #64ffda; }
 
 /* Footer */
 footer { text-align: center; padding: 20px; background: rgba(10,25,47,0.85); color: #64ffda; }
+
