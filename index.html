@@ -1,34 +1,277 @@
-/* Hero Section */
-.hero {
-  height: 100vh;
-  background: url('https://your-image-link.jpg') no-repeat center center/cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Narasimha Reddy | Network & Security Engineer</title>
 
-.hero-content {
-  max-width: 800px;
-}
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
 
-.hero-title {
-  font-size: 3rem;
-  font-weight: bold;
-  background: linear-gradient(45deg, #00f0ff, #ff00ff);
-  background-clip: text;
-  color: transparent;
-  animation: gradientShift 6s linear infinite;
-}
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-.hero-description {
-  font-size: 1.5rem;
-  margin-top: 15px;
-}
+<!-- Your CSS -->
+<link rel="stylesheet" href="Narasimha-portfolio.css">
 
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+</head>
+
+<body>
+
+<header>
+  <h1>Narasimha Reddy</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-background"></div> 
+  <div class="hero-text">
+    <div class="greetings-stack">
+      <span class="greeting">👋 Hello </span>
+      <span class="greeting">🙏 Namaste</span>
+      <span class="greeting">🕉️ Om Shiva</span>
+    </div>
+    <h1>Hi, I'm <span>Narasimha Reddy</span></h1>
+    <p>Network Engineer & System Administrator with 9+ years of expertise in network design, security, and IT infrastructure management.</p>
+    
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="gradient-3d" style="text-align:left;">About Me</h2>
+  <div class="about-container">
+    <div class="about-img">
+      <img src="https://raw.githubusercontent.com/Narasimha-OM/my-portfolio/main/assets/mypic.jpg" alt="Narasimha Reddy">
+    </div>
+    <div class="about-text">
+      <div class="tab-buttons">
+        <button class="tab-btn active" onclick="openTab('basic')">Basic Info</button>
+        <button class="tab-btn" onclick="openTab('education')">Education</button>
+      </div>
+      <div id="basic" class="tab-content active">
+        <p>Besides Education, I focus on AI, networking, and software development. I have experience with Javascript, Python, and cloud technologies to build scalable and efficient applications. I am pursuing a Master's degree in Computer Science from University of Colorado, Denver and have previously worked at Oracle Health.</p>
+        <p>Currently, I'm focused on building robust applications, solving algorithmic challenges, and enhancing AI-powered solutions.</p>
+        <p>Beyond coding, I enjoy listening to music, cooking, and talking with friends and my mother back in India.</p>
+        <p>Let's connect and build something amazing!</p>
+      </div>
+      <div id="education" class="tab-content">
+        <div class="education-box">
+          <img src="https://raw.githubusercontent.com/Narasimha-OM/my-portfolio/main/assets/SV-University.jpg" alt="Sri Venkateswara University">
+          <div>
+            <b>B.Sc Computer Science</b> — Sri Venkateswara University<br>
+            2012–2014
+          </div>
+        </div>
+        <div class="education-box">
+          <img src="https://raw.githubusercontent.com/Narasimha-OM/my-portfolio/main/assets/AnnamalaiUniversity.jpg" alt="Annamalai University">
+          <div>
+            <b>MCA</b> — Annamalai University<br>
+            2015–2018
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2 class="Skills">Skills</h2>
+  <div class="skills-container">
+    <div class="skills-text">
+      <p>I have the experience. Here’s my skillset for success:</p>
+    </div>
+    <div class="skills-list">
+      <div class="skill-item">
+        <img src="icons/osi.png" alt="OSI Logo">
+        <span>OSI Model</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://github.com/Narasimha-OM/my-portfolio/blob/main/assets/computernetwork.png" alt="LAN Logo">
+        <span>LAN/WAN</span>
+      </div>
+      <div class="skill-item">
+        <img src="icons/radius.png" alt="RADIUS Logo">
+        <span>RADIUS/AAA</span>
+      </div>
+      <div class="skill-item">
+        <img src="icons/ad.png" alt="MS AD Logo">
+        <span>MS AD</span>
+      </div>
+      <div class="skill-item">
+        <img src="icons/dns.png" alt="DNS Logo">
+        <span>DNS</span>
+      </div>
+      <div class="skill-item">
+        <img src="icons/dhcp.png" alt="DHCP Logo">
+        <span>DHCP</span>
+      </div>
+      <div class="skill-item">
+        <img src="icons/security.png" alt="Security Logo">
+        <span>Security Tools</span>
+      </div>
+      <div class="skill-item">
+        <img src="icons/routing.png" alt="Routing Logo">
+        <span>Routing (RIP, BGP, EIGRP, OSPF)</span>
+      </div>
+      <div class="skill-item">
+        <img src="icons/switching.png" alt="Switching Logo">
+        <span>Switching (STP, VLAN, HSRP)</span>
+      </div>
+      <div class="skill-item">
+        <img src="icons/firewall.png" alt="Firewall Logo">
+        <span>Firewall (ASA, FTD, FortiGate)</span>
+      </div>
+      <div class="skill-item">
+        <img src="icons/vpn.png" alt="VPN Logo">
+        <span>VPN (GRE, DMVPN, S2S)</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://raw.githubusercontent.com/Narasimha-OM/my-portfolio/main/icons/wireshark-logo.jpg" alt="Wireshark Logo">
+        <span>Network Analysis (Wireshark)</span>
+      </div>
+      <div class="skill-item">
+        <img src="icons/nessus.png" alt="Nessus Logo">
+        <span>Vulnerability Scanning (Nessus)</span>
+      </div>
+      <div class="skill-item">
+        <img src="icons/monitoring.png" alt="Monitoring Logo">
+        <span>Monitoring Tools (Solarwinds, Zabbix)</span>
+      </div>
+      <div class="skill-item">
+        <img src="icons/ticketing.png" alt="Ticketing Logo">
+        <span>Ticketing Tools (Remedy, ServiceNow)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+  <h2>Professional Experience</h2>
+
+  <!-- Experience Container -->
+  <div class="experience-container">
+    <!-- First Experience Box -->
+    <div class="experience-box">
+      <img src="https://raw.githubusercontent.com/Narasimha-OM/my-portfolio/main/assets/oraclecerner.png" alt="Oracle Cerner" class="company-logo">
+      <div class="job-details">
+        <b class="job-title">Network Engineer</b><br>
+        <b class="company-name">Oracle Cerner Healthcare Solutions India Pvt Ltd</b><br>
+        <b class="job-dates">Sep 2022 – Present</b>
+        <span class="job-location">| Bangalore</span>
+      </div>
+    </div>
+
+    <!-- Second Experience Box -->
+    <div class="experience-box">
+      <img src="https://icon2.cleanpng.com/20180802/fgl/kisspng-logo-product-design-brand-organization-font-idc-logo-svg-vector-amp-png-transparent-vector-5b62ba3a78b6e4.1126495215331968584945.jpg" alt="IDC Center" class="company-logo">
+      <div class="job-details">
+        <b class="job-title">Network Engineer & Assistant System Administrator</b><br>
+        <b class="company-name">IDC Center for Consulting & Research Pvt Ltd</b><br>
+        <span class="job-dates">Feb 2020 – Sep 2022</span>
+        <span class="job-location">| Bangalore</span>
+      </div>
+    </div>
+
+    <!-- Third Experience Box -->
+    <div class="experience-box">
+      <img src="https://raw.githubusercontent.com/Narasimha-OM/my-portfolio/main/assets/IKT.jpg" alt="InknowTech" class="company-logo">
+      <div class="job-details">
+        <b class="job-title">Assistant System Administrator</b><br>
+        <b class="company-name">InknowTech</b><br>
+        <span class="job-dates">Nov 2018 – Feb 2020</span>
+        <span class="job-location"> | Bangalore</span>
+      </div>
+    </div>
+
+    <!-- Fourth Experience Box -->
+    <div class="experience-box">
+      <img src="data:image/png;base64,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" alt="Accenture" class="company-logo">
+      <div class="job-details">
+        <b class="job-title">Desktop Support Engineer</b><br>
+        <b class="company-name">Accenture Solutions Pvt Ltd</b><br>
+        <span class="job-dates">Jan 2016 – Feb 2018</span>
+        <span class="job-location"> | Bangalore</span>
+      </div>
+    </div>
+  </div> <!-- End of Experience Container -->
+</section>
+
+<!----==================HoMe LAB Start======================= -->
+<section id="Home-Lab"> 
+    <h2>Home Lab</h2>
+
+
+    <div class="lab-details">
+        <h3>Server List</h3>
+        <ul class="servers-list">
+            <li><button class="server-btn">Firewalls</button></li>
+            <li><button class="server-btn">GNS3 Server</button></li>
+            <li><button class="server-btn">EVEN-G Server</button></li>
+            <li><button class="server-btn">Nessus Server</button></li>
+            <li><button class="server-btn">ADDC01 Server</button></li>
+        </ul>
+    </div>
+</section>
+
+<!----==================HoMe LAB End======================= -->
+
+
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Let's Connect</h2>
+
+  <div class="contact-logo-box">
+    <img 
+      src="https://raw.githubusercontent.com/Narasimha-OM/my-portfolio/main/assets/contactme.png" 
+      alt="Contact Me" 
+      class="contact-logo"
+    >
+  </div>
+
+  <p class="contact-text">
+    Let's Work Together! Feel free to drop a message, let's collaborate and create something amazing together!<br><br>
+    Email: <a href="mailto:reddyn095@gmail.com">reddyn095@gmail.com</a><br>
+    Phone: <a href="tel:+918050522756">+91 80505 22756</a><br>
+    Location: Bangalore, Karnataka, India
+  </p>
+</section>
+
+
+
+<!-- Footer -->
+<footer>
+  &copy; 2025 Narasimha Reddy. All Rights Reserved.
+</footer>
+
+<script>
+// Tabs
+function openTab(tabId) {
+  const tabs = document.querySelectorAll('.tab-content');
+  const buttons = document.querySelectorAll('.tab-btn');
+  tabs.forEach(tab => tab.classList.remove('active'));
+  buttons.forEach(btn => btn.classList.remove('active'));
+  document.getElementById(tabId).classList.add('active');
+  document.querySelector(`[onclick="openTab('${tabId}')"]`).classList.add('active');
 }
+</script>
+
+</body>
+</html>
+
+
+
+
